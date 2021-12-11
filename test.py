@@ -64,3 +64,8 @@ def loading_model():
 
 final_predictions = loading_model()
 print(final_predictions)
+
+conf_matrix_boost = confusion_matrix(labels_test, final_predictions)
+class_report_boost = classification_report(labels_test, final_predictions)
+print(conf_matrix_boost)
+print(class_report_boost)
